@@ -1,0 +1,65 @@
+<scenario>
+  <name>roamingTest.scenario</name>
+  <maxRuleFirings>100000</maxRuleFirings>
+  <globals/>
+  <fixtures>
+    <fact-data>
+      <type>Service</type>
+      <fieldData>
+        <field-data>
+          <name>name</name>
+          <value>International Roaming</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>$service</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+      <name>table</name>
+    </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+    <execution-trace>
+      <executionTimeResult>1</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
+    </execution-trace>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>hlr</fieldName>
+          <expected>true</expected>
+          <successResult>true</successResult>
+          <explanation>[$service] field [hlr] was [true].</explanation>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>lte_hss</fieldName>
+          <expected>true</expected>
+          <successResult>true</successResult>
+          <explanation>[$service] field [lte_hss] was [true].</explanation>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>$service</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
+    <expect-rule>
+      <ruleName>Row 1 components</ruleName>
+      <explanation>Rule [Row 1 components] was activated 1 times.</explanation>
+      <expectedFire>true</expectedFire>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
+    </expect-rule>
+  </fixtures>
+  <lastRunResult>2020-06-29 03:10:47.663 UTC</lastRunResult>
+  <rules/>
+  <inclusive>false</inclusive>
+  <packageName>com.myspace.telco</packageName>
+  <imports>
+    <imports/>
+  </imports>
+  <ksessions>
+    <string>defaultKieSession</string>
+  </ksessions>
+</scenario>
