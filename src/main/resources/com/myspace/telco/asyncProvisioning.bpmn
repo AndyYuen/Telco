@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_TZnHEPSrEeqOpfY1TTHqWA" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_5xIUQPZbEeqGl9r6N2B7-Q" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
   <bpmn2:itemDefinition id="_serviceItem" structureRef="com.myspace.telco.Service"/>
   <bpmn2:itemDefinition id="_statusItem" structureRef="String"/>
   <bpmn2:itemDefinition id="_SignalProcessInstanceIdItem" structureRef="java.lang.Long"/>
@@ -56,14 +56,14 @@ Notification]]></drools:metaValue>
       <bpmn2:incoming>_B5D9C9BD-977D-40F2-8148-CB3F6CE45443</bpmn2:incoming>
       <bpmn2:outgoing>_DED1759E-0DEC-49DA-9F6A-12B85B5B83E1</bpmn2:outgoing>
       <bpmn2:dataOutput id="_95FA9BBC-D412-4521-BF5C-BF402FCD4724_statusOutputX" drools:dtype="String" itemSubjectRef="__95FA9BBC-D412-4521-BF5C-BF402FCD4724_statusOutputXItem" name="status"/>
-      <bpmn2:dataOutputAssociation id="_TZnHEvSrEeqOpfY1TTHqWA">
+      <bpmn2:dataOutputAssociation id="_5xIUQvZbEeqGl9r6N2B7-Q">
         <bpmn2:sourceRef>_95FA9BBC-D412-4521-BF5C-BF402FCD4724_statusOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>status</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:outputSet id="_TZnHEfSrEeqOpfY1TTHqWA">
+      <bpmn2:outputSet id="_5xIUQfZbEeqGl9r6N2B7-Q">
         <bpmn2:dataOutputRefs>_95FA9BBC-D412-4521-BF5C-BF402FCD4724_statusOutputX</bpmn2:dataOutputRefs>
       </bpmn2:outputSet>
-      <bpmn2:signalEventDefinition id="_TZnHE_SrEeqOpfY1TTHqWA" signalRef="_7e967efd-3a9b-3aeb-bf25-e2faf9fa04ca"/>
+      <bpmn2:signalEventDefinition id="_5xIUQ_ZbEeqGl9r6N2B7-Q" signalRef="_7e967efd-3a9b-3aeb-bf25-e2faf9fa04ca"/>
     </bpmn2:intermediateCatchEvent>
     <bpmn2:scriptTask id="_349E8388-43AC-414B-9433-413A7E11FC0D" name="Display Process  Info" scriptFormat="http://www.java.com/java">
       <bpmn2:extensionElements>
@@ -96,8 +96,8 @@ System.out.println("DeploymentId: " + deploymentId + " ; ProcessInstanceId: " + 
       <bpmn2:incoming>_DED1759E-0DEC-49DA-9F6A-12B85B5B83E1</bpmn2:incoming>
     </bpmn2:endEvent>
   </bpmn2:process>
-  <bpmndi:BPMNDiagram id="_TZnHFPSrEeqOpfY1TTHqWA">
-    <bpmndi:BPMNPlane id="_TZnHFfSrEeqOpfY1TTHqWA" bpmnElement="Telco.asyncProvisioning">
+  <bpmndi:BPMNDiagram id="_5xIURPZbEeqGl9r6N2B7-Q">
+    <bpmndi:BPMNPlane id="_5xIURfZbEeqGl9r6N2B7-Q" bpmnElement="Telco.asyncProvisioning">
       <bpmndi:BPMNShape id="shape__61548C27-D616-4226-8D4E-939FD9E1CF71" bpmnElement="_61548C27-D616-4226-8D4E-939FD9E1CF71">
         <dc:Bounds height="56.0" width="56.0" x="770.0" y="139.0"/>
       </bpmndi:BPMNShape>
@@ -131,12 +131,12 @@ System.out.println("DeploymentId: " + deploymentId + " ; ProcessInstanceId: " + 
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
-  <bpmn2:relationship id="_TZnuIPSrEeqOpfY1TTHqWA" type="BPSimData">
+  <bpmn2:relationship id="_5xIURvZbEeqGl9r6N2B7-Q" type="BPSimData">
     <bpmn2:extensionElements>
       <bpsim:BPSimData>
         <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
           <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters"/>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_2FED0C49-2FE1-4E84-BCAE-6907CA7164D4" id="_TZnuIfSrEeqOpfY1TTHqWA">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_2FED0C49-2FE1-4E84-BCAE-6907CA7164D4" id="_5xIUR_ZbEeqGl9r6N2B7-Q">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -156,7 +156,7 @@ System.out.println("DeploymentId: " + deploymentId + " ; ProcessInstanceId: " + 
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_349E8388-43AC-414B-9433-413A7E11FC0D" id="_TZnuIvSrEeqOpfY1TTHqWA">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_349E8388-43AC-414B-9433-413A7E11FC0D" id="_5xIUSPZbEeqGl9r6N2B7-Q">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -176,7 +176,7 @@ System.out.println("DeploymentId: " + deploymentId + " ; ProcessInstanceId: " + 
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_10D29C69-0EEF-41D1-B43E-59C668361E0B" id="_TZnuI_SrEeqOpfY1TTHqWA">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_10D29C69-0EEF-41D1-B43E-59C668361E0B" id="_5xIUSfZbEeqGl9r6N2B7-Q">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -186,7 +186,7 @@ System.out.println("DeploymentId: " + deploymentId + " ; ProcessInstanceId: " + 
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_TZnHEPSrEeqOpfY1TTHqWA</bpmn2:source>
-    <bpmn2:target>_TZnHEPSrEeqOpfY1TTHqWA</bpmn2:target>
+    <bpmn2:source>_5xIUQPZbEeqGl9r6N2B7-Q</bpmn2:source>
+    <bpmn2:target>_5xIUQPZbEeqGl9r6N2B7-Q</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>
